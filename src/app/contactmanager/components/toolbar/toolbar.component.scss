@@ -1,0 +1,34 @@
+$iconWidth: 56px;
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.sidenav-toggle{
+    display: none;
+    padding: 0;
+    margin: 5px;
+    min-width: $iconWidth;
+
+    @media (max-width: 720px){
+        display: flex;
+    }
+
+    mat-icon{
+        font-size: 30px;
+        height: $iconWidth;
+        line-height: $iconWidth;
+        width: $iconWidth;
+        color: #fff;
+    }
+}
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+  .pointer{
+      cursor: pointer;
+  }
